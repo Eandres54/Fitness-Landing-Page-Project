@@ -1,0 +1,11 @@
+.flex-content {
+    display: flex;
+    flex-direction: row;
+}
+
+/* On screens 400 pixels or less, stack columns vertically instead of horizontally */
+@media all and (max-width: 400px){
+    .flex-content {
+        flex-direction: column;
+    }
+}
