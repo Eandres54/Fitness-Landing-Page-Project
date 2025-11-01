@@ -1,11 +1,12 @@
-.flex-content {
+.banner {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 /* On screens 400 pixels or less, stack columns vertically instead of horizontally */
-@media all and (max-width: 400px){
-    .flex-content {
+@media  (max-width: 400px){
+    .banner {
         flex-direction: column;
     }
 }
