@@ -1,0 +1,106 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0.5em;
+    display: inline-flex;
+}
+
+/* On screens 400 pixels or less, stack vertically*/
+@media  (max-width: 635px){
+    ul{
+        flex-direction: column;
+    }
+}
+
+.Goals {
+    display: block;
+    flex: 1;
+}
+
+.Training {
+    display: block;
+    flex: 1;
+}
+
+.Contact {
+    display: block;
+    flex: 1;
+}
+
+article {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 50px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'header header header' 
+    'image1 image2 image3' 
+    'blurb1 blurb2 blurb3';
+    place-items: center;
+}
+.item-1 {
+    grid-area: header;
+}
+.item-2 {
+    grid-area: image1;
+}
+.item-3 {
+    grid-area: image2;
+}
+.item-4 {
+    grid-area: image3;
+}
+.item-5 {
+    grid-area: blurb1;
+}
+.item-6 {
+    grid-area: blurb2;
+}
+.item-7 {
+    grid-area: blurb3;
+}
+
+.container2 {
+    display: grid;
+    grid-template-rows: 50px 100px 100px; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'header2 header2 header2'
+        'image4 image5 image6'
+        'blurb4 blurb5 blurb6';
+        place-items: center;
+}
+.item-8 {
+    grid-area: header2;
+}
+.item-9 {
+    grid-area: image4;
+}
+.item-10 {
+    grid-area: image5;
+}
+.item-11 {
+    grid-area: image6;
+}
+.item-12 {
+    grid-area: blurb4;
+}
+.item-13 {
+    grid-area: blurb5;
+}
+.item-14 {
+    grid-area: blurb6;
+}
