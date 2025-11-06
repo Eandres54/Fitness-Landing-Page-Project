@@ -37,6 +37,10 @@ a {
     flex: 1;
 }
 
+article {
+    text-align: center;
+}
+
 .container {
     display: grid;
     grid-template-rows: 50px 100px 100px;
@@ -45,6 +49,7 @@ a {
     'header header header' 
     'image1 image2 image3' 
     'blurb1 blurb2 blurb3';
+    place-items: center;
 }
 .item-1 {
     grid-area: header;
@@ -76,6 +81,7 @@ a {
         'header2 header2 header2'
         'image4 image5 image6'
         'blurb4 blurb5 blurb6';
+        place-items: center;
 }
 .item-8 {
     grid-area: header2;
