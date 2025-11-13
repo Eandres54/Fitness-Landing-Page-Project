@@ -1,18 +1,39 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient( to bottom right, black, darkblue, blue, skyblue);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    padding-bottom: 200px;
+}
+
 h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 ul {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 a {
     text-decoration: none;
     font-size: 20px;
-    padding: 0.5em;
+    margin: 50px 50px;
     display: inline-flex;
+    color: white;
+}
+
+a:hover {
+    color: teal
+}
+
+a:visited {
+    color: purple
 }
 
 /* On screens 400 pixels or less, stack vertically*/
@@ -37,13 +58,39 @@ a {
     flex: 1;
 }
 
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container3 {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'image text';
+    place-items: center;
+}
+.item-15 {
+    grid-area: image;
+    padding-left: 250px;
+}
+.item-16 {
+    grid-area: text;
+    margin-right: 100px;
+}
+
 article {
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 50px 100px 100px;
+    grid-template-rows: 75px 150px 150px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     'header header header' 
@@ -53,6 +100,8 @@ article {
 }
 .item-1 {
     grid-area: header;
+    font-size: 25px;
+    text-decoration: underline;
 }
 .item-2 {
     grid-area: image1;
@@ -65,17 +114,23 @@ article {
 }
 .item-5 {
     grid-area: blurb1;
+    text-align: center;
+    margin: 50px;
 }
 .item-6 {
     grid-area: blurb2;
+    text-align: center;
+    margin: 50px;
 }
 .item-7 {
     grid-area: blurb3;
+    text-align: center;
+    margin: 50px;
 }
 
 .container2 {
     display: grid;
-    grid-template-rows: 50px 100px 100px; 
+    grid-template-rows: 75px 150px 150px; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         'header2 header2 header2'
@@ -85,6 +140,8 @@ article {
 }
 .item-8 {
     grid-area: header2;
+    font-size: 25px;
+    text-decoration: underline;
 }
 .item-9 {
     grid-area: image4;
@@ -97,10 +154,22 @@ article {
 }
 .item-12 {
     grid-area: blurb4;
+    text-align: center;
+    margin: 50px;
 }
 .item-13 {
     grid-area: blurb5;
+    text-align: center;
+    margin: 50px;
 }
 .item-14 {
     grid-area: blurb6;
+    text-align: center;
+    margin: 50px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
